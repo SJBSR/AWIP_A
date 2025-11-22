@@ -1,4 +1,4 @@
-from gettext import install
+#from gettext import install
 #import pip
 import nltk
 
@@ -15,7 +15,7 @@ verified_words = set(word.lower() for word in words.words())
 
 # To check if a word exists in the verified words list
 
-my_word = "example"
+my_word = input("Enter a word to check if it's a valid English word: ").lower()
 
 if my_word in verified_words:
     print(f"Yes, '{my_word},' is a valid English word.")
